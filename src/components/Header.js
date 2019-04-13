@@ -9,21 +9,21 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-md navbar-light bg-light">
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+          <div className="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item active">
+                <a className="nav-link">Home <span className="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link">Blog</a>
+              <li className="nav-item">
+                <a className="nav-link">Blog</a>
               </li>
             </ul>
           </div>
-          <a class="btn btn-outline-primary ml-auto">Kapcsolat</a>
+          <a className="btn btn-outline-primary ml-auto">Kapcsolat</a>
         </nav>
       </header>
     );
