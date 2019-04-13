@@ -1,0 +1,59 @@
+header {
+  padding: 1em 1.5em;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+section#header {
+  opacity: .9;
+  .heading {
+    font-weight: bolder;
+    font-size: 45px;
+    padding-top: 5vh;
+    @include desktop {
+      padding-top: 17vh;
+      font-size: 72px;
+    }
+  }
+}
+
+section#bemutatkozas {
+  min-height: 60vh;
+}
+
+section#skills {
+  .skills_box{
+    border: .5px solid grey;
+    border-radius: 7px;
+    .flex-fill {
+      min-width: 200px;
+    }
+  }
+}
+
+.tav {
+  padding-bottom: 15%;
+}
+
+section#portfolio {
+  .col {
+    min-width: 200px;
+    margin: 1.5em .8em;
+    padding: 4.5em 0;
+    border-radius: 7px;
+  }
+  .cirkon {
+    background-color: #324B4F;
+  }
+  .grof {
+    background-color: #BD98BA;
+  }
+  .matek {
+    background-color: #D87837;
+  }
+}
+
+footer {
+  background: color(fo_kek);
+  opacity: .9;
+}

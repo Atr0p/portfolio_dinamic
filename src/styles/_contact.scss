@@ -1,0 +1,23 @@
+section#contact {
+  font-size: 21px;
+  .cover-heading {
+    font-size: 28px;
+    opacity: .9;
+    @include desktop {
+      font-size: 40px;
+    }
+  }
+  input[type=text],input[type=email],textarea {
+    font-size: 18px;
+    padding: 16px 20px !important;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  button[type=submit] {
+    font-size: 18px;
+    width:25vh;
+    border-radius: 20px;
+    margin-bottom: 25vh;
+  }
+}

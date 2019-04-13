@@ -1,0 +1,35 @@
+$colors: (
+ fo_kek: #34495E,
+ hatter: #f5f8fa
+);
+
+@function color($color_name) {
+  @return map-get($colors, $color_name)
+}
+
+@mixin gradient($direction, $color1, $color2) {
+  background: -webkit-linear-gradient($direction, $color1, $color2);
+  background: -moz-linear-gradient($direction, $color1, $color2);
+  background: -o-linear-gradient($direction, $color1, $color2);
+  background: linear-gradient($direction, $color1, $color2);
+}
+
+  //@include gradient(to top right, color(sotet-kek), color(sotet-lila) 75%);
+
+$desktop: 994px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: europa, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background: color(hatter);
+  min-height: 97vh;
+}
