@@ -5,6 +5,8 @@ import SEO from '../components/SEO';
 import Layout from '../layouts/index';
 
 const Home = (props) => {
+  const posts = props.data.allMarkdownRemark.edges;
+  const works = props.data.allFeaturesJson.edges;
   return (
     <Layout bodyClass="page-home">
 
@@ -57,12 +59,60 @@ const Home = (props) => {
                 <div class="col grof"><h3>Ez egy projekt</h3></div>
                 <div class="col matek"><h3>Ez egy projekt</h3></div>
             </div>
+            {json.map(edge => (
+            <div key={edge.node.id} className="col-12 col-md-6 col-lg-4 mb-2">
+              <Link to={edge.node.path} >
+                <div className="card feature">
+                  {edge.node.image && (
+                    <div className="card-img-top w-100" alt={'feature-'+edge.node.title} style={{backgroundImage: "url("+withPrefix(edge.node.image)+")"}} ></div>
+                  )}
+                  <div className="card-body">
+                      <h4 className="card-title">{edge.node.title}</h4>
+                    <p className="card-text">{edge.node.description}</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
         </section>
     </main>
 
     </Layout>
   );
 };
+
+export const query = graphql`
+  query {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/blog/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            path
+            title
+            featured
+            date(formatString: "DD MMMM YYYY")
+          }
+          excerpt(pruneLength: 250)
+        }
+      }
+    }
+    allWorksJson {
+      edges {
+        node {
+          id
+          title
+          description
+          image
+          path
+        }
+      }
+    }
+  }
+`;
 
 
 export default Home;
