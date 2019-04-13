@@ -6,8 +6,7 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     resolve(
       graphql(
-        `
-          query {
+        `query {
             posts: allMarkdownRemark(
               filter: { fileAbsolutePath: { regex: "/blog/" } }
               sort: { fields: [frontmatter___date], order: DESC }
@@ -27,6 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
+          }
         `,
       ).then((result) => {
         result.data.posts.edges.forEach(({ node }) => {

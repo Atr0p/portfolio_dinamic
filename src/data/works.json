@@ -1,15 +1,21 @@
 [
     {
       "title": "Cirkon",
-      "description": "We are helping Your sector with preparation of energy audits, energy performance certificates (EPC), elaboration of energy tenders, installation plan and shadow effect assessment for solar PV systems, as well as consultancy on renewable energy developments.",
+      "description": "We are helping Your sector wi",
       "image": "/works/egyik.jpg",
       "path": "cirkonuniversum.hu"
     },
     {
       "title": "Najdiprekladatele",
-      "description": "We are helping Your sector with preparation of energy performance certificates (EPC), elaboration of energy tenders, installation plan and shadow effect assessment for solar PV systems, as well as consultancy on renewable energy developments.",
+      "description": "We are helping Your sector with preparation of energy pas consultancy on renewable energy developments.",
       "image": "/works/masik.jpg",
       "path": "najdiprekladatele.cz"
+    },
+    {
+      "title": "Mateklab",
+      "description": "We are helping Your sector with preparation of energy performance certificates .",
+      "image": "/works/harmadik.jpg",
+      "path": "mateklabor.hu"
     }
   ]
   

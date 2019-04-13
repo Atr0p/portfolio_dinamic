@@ -58,22 +58,30 @@ const Home = (props) => {
                 <div className="col grof"><h3>Ez egy projekt</h3></div>
                 <div className="col matek"><h3>Ez egy projekt</h3></div>
             </div>
-            {works.map(edge => (
-            <div key={edge.node.id} className="col-12 col-md-6 col-lg-4 mb-2">
-              <Link to={edge.node.path} >
-                <div className="card feature">
-                  {edge.node.image && (
-                    <div className="card-img-top w-100" alt={'feature-'+edge.node.title} style={{backgroundImage: "url("+withPrefix(edge.node.image)+")"}} ></div>
-                  )}
-                  <div className="card-body">
-                      <h4 className="card-title">{edge.node.title}</h4>
-                    <p className="card-text">{edge.node.description}</p>
-                  </div>
+            
+
+            <div class="row mb-5 justify-content-around">
+              {works.map(edge => (
+                <div key={edge.node.id}  class="col-md-4">
+                  <Link to={edge.node.path} >
+                    <div class="temakep shadow-sm my-2">
+                      <div class="temakepleiras">
+                          <div class="temakepszoveg">
+                              <p>{edge.node.description}</p>
+                              <a class="btn btn-outline-primary" href="">cim</a>
+                          </div>
+                      </div>
+                      <div class="temakepprev">
+                          <span><h2 class="block">{edge.node.title}</h2></span>
+                      </div>
+                    </div>
+                  </Link>
                 </div>
-              </Link>
+              ))}
             </div>
-          ))}
+
         </section>
+
     </main>
 
     </Layout>
