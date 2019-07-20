@@ -20,7 +20,6 @@ exports.createPages = ({ graphql, actions }) => {
                     featured
                     customer
                     date(formatString: "DD MMMM YYYY")
-                    form
                   }
                   excerpt
                 }

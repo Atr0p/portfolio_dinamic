@@ -15,15 +15,15 @@ class Header extends React.Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                <a className="nav-link">Home <span className="sr-only">(current)</span></a>
+              <li className="nav-item">
+                <Link to="/" activeClassName="active" className="nav-link">Home</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link">Blog</a>
+                <Link to="/blog/" activeClassName="active" className="nav-link">Blog</Link>
               </li>
             </ul>
           </div>
-          <a className="btn btn-outline-primary ml-auto">Kapcsolat</a>
+          <Link to="/contact/" className="btn btn-outline-primary ml-auto">Kapcsolat</Link>
         </nav>
       </header>
     );

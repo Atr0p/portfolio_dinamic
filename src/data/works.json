@@ -1,19 +1,25 @@
 [
     {
-      "title": "Cirkon",
-      "description": "We are helping Your sector wi",
+      "name": "Cirkon",
+      "description": "#a8edea → #fed6e3",
+      "css": "linear-gradient(to top, #a8edea 0%, #fed6e3 100%)",
+      "height": "100",
       "image": "/works/egyik.jpg",
       "path": "cirkonuniversum.hu"
     },
     {
-      "title": "Najdiprekladatele",
-      "description": "We are helping Your sector with preparation of energy pas consultancy on renewable energy developments.",
+      "name": "Najdiprekladatele",
+      "description": "#a8edea → #fed6e3",
+      "css": "linear-gradient(to top, #a8edea 0%, #fed6e3 100%)",
+      "height": "100",
       "image": "/works/masik.jpg",
       "path": "najdiprekladatele.cz"
     },
     {
-      "title": "Mateklab",
-      "description": "We are helping Your sector with preparation of energy performance certificates .",
+      "name": "Mateklab",
+      "description": "#a8edea → #fed6e3",
+      "css": "linear-gradient(to top, #a8edea 0%, #fed6e3 100%)",
+      "height": "100",
       "image": "/works/harmadik.jpg",
       "path": "mateklabor.hu"
     }

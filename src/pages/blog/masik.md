@@ -1,5 +1,5 @@
 ---
-path: 'blog/business-sales'
+path: 'blog/masik'
 title: 'Business Sales'
 featured: true
 date: 2018-11-28T15:15:26+10:00
