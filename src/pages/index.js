@@ -3,6 +3,7 @@ import { graphql, withPrefix, Link } from 'gatsby';
 import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../layouts/index';
+import Header from '../components/Header';
 
 import { config } from 'react-spring/renderprops';
 import Grid from '../components/Grid';
@@ -51,8 +52,15 @@ class Cell extends React.Component {
 
 const Home = (props) => {
   let melok = [];
+
   props.data.allWorksJson.edges.map(melo => (
-    melok.push(melo.node)
+    melok.push({
+      name : melo.node.name,
+      height : parseInt(melo.node.height),
+      css : melo.node.css,
+      description : melo.node.description,
+      path: melo.node.path
+    })
   ));
 
   const data = [
@@ -155,10 +163,7 @@ const Home = (props) => {
 
       <main role="main">
 
-        <section id="header" className="inner cover container">
-            <h1 className="heading display-3">Hi, my name is Peter.</h1>
-            <p className="lead">I design and code beautifully simple things, and I love what I do.</p>
-        </section>
+       <Header />
 
         <section id="bemutatkozas" className="container tav text-center">
             <h3 className="pt-5">Örülök, hogy megismerhetlek</h3>
@@ -188,12 +193,7 @@ const Home = (props) => {
             </div>
         </section>
 
-        <section id="portfolio" className="text-center container tav">
-            <div className="row">
-                <div className="col cirkon"><h3>Ez egy projekt</h3></div>
-                <div className="col grof"><h3>Ez egy projekt</h3></div>
-                <div className="col matek"><h3>Ez egy projekt</h3></div>
-            </div>
+        <section id="portfolio" className="text-center tav">
             {console.log('melok',melok)}
             {console.log('data',data)}
             <Grid
