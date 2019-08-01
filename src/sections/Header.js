@@ -8,7 +8,7 @@ export default class Header extends Component {
         return (
              <section id="header" className="inner cover container">
                 <h1 className="heading display-3">Hi, I'm Peter.</h1>
-                <p className="lead">I design and code beautifully simple and valuable things,<br/> and I love what I do.</p>
+                <p className="lead">I am a Web developer with experience designing and building websites and web applications.</p>
                 <div className="h4">
                     <span className="my-2 mr-2"><a href="#"><FaEnvelope /></a></span>
                     <span className="m-2">
