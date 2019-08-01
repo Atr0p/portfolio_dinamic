@@ -1,6 +1,8 @@
 import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
 
+import {FaArrowRight} from 'react-icons/fa';
+
 const Startups = props => {
     
     const melok = props.data.allWorksJson.edges;
@@ -26,7 +28,12 @@ const Startups = props => {
                         <h4 className="meloCimCont">{melo.node.name}</h4>
                         <p>{melo.node.description}</p>
                         <br/>
-                        <span className="text-muted">{melo.node.status}</span>
+                        {(melo.node.status == "Under development" && melo.node.path != "") ? (
+                          <span className="text-muted"><a href={melo.node.path}>{melo.node.status} <FaArrowRight /></a></span>
+                        ) : (
+                          <span className="text-muted">{melo.node.status}</span>
+                        )}
+                        
                       </div>
                       
                     </div>
