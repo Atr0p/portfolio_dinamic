@@ -1,5 +1,3 @@
-const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID;
-
 module.exports = {
   siteMetadata: {
     title: 'Peter Kovach',
@@ -30,7 +28,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: guid ? guid : 'UA-XXX-1',
+        trackingId: 'UA-145880560-1',
         // Puts tracking script in the head instead of the body
         head: false,
       },
