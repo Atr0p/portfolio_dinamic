@@ -17,7 +17,7 @@ const Projects = props => {
                 <div key={melo.path} className="col-md-4">
                   
                   <a href={melo.node.path}>
-                    <div className="card mx-1 p-4 meloCard my-2" 
+                    <div className="card shadow mx-1 p-4 meloCard my-2" 
                         style={{background: melo.node.css, color: melo.node.text}}
                     >
                       <div className="prew">
