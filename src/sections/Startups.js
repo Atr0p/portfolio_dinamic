@@ -12,23 +12,23 @@ const Startups = props => {
         <section id="startups" className="text-center tav container">
           <div className="row justify-content-center">
             {melok.map(melo => (
-              (melo.node.type == "startup" ? (
+              (melo.node.type === "startup" ? (
               <div key={melo.name} className="col-md-6 my-2 my-md-0">
                 
                   <div className="card mx-1 p-4 meloCard shadow" 
                       style={{border: '3px solid'+melo.node.css, color: melo.node.text}}
                   >
                     <div className="row align-items-center justify-content-center">
-                      {(melo.node.image != '') ? (
+                      {(melo.node.image !== '') ? (
                         <span className="meloImgCont col-2">
-                          <img className="meloImg" src={melo.node.image} />
+                          <img alt={melo.name} className="meloImg" src={melo.node.image} />
                         </span>
                       ) : null}
                       <div className="col-8">
                         <h4 className="meloCimCont">{melo.node.name}</h4>
                         <p>{melo.node.description}</p>
                         <br/>
-                        {(melo.node.status == "Under development" && melo.node.path != "") ? (
+                        {(melo.node.status === "Under development" && melo.node.path !== "") ? (
                           <span className="text-muted"><a href={melo.node.path}>{melo.node.status} <FaArrowRight /></a></span>
                         ) : (
                           <span className="text-muted">{melo.node.status}</span>

@@ -8,9 +8,10 @@ section#header {
 
   min-height: 100vh;
   .heading {
-    font-size: 45px;
+    font-size: 36px;
     padding-top: 16vh;
     @include desktop {
+      font-size: 45px;
       padding-top: 26vh;
       font-size: 72px;
     }
@@ -28,7 +29,21 @@ section#header {
       }
   }
   .header-szoveg {
-    margin-top: -3vh;
+    margin-top: 1vh;
+    font-size: 1em;
+    @include desktop {
+      font-size: 1.2em;
+      margin-top: -3vh;
+    }
+  }
+  .header-linkek {
+    font-size: 1.2em;
+    @include desktop {
+      font-size: 1.6em;
+    }
+    a {
+      margin: 0 1em;
+    }
   }
 }
 

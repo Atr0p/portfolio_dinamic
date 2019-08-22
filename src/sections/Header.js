@@ -18,15 +18,15 @@ export default class Header extends Component {
                             <div className="w-100">
                                 <h1 className="heading">
                                     <div className="card p-3 d-inline-block">
-                                        <span className="display-3 font-weight-bold">Hi, I'm Peter.</span>
+                                        <span className="font-weight-bold">Hi, I'm Peter.</span>
                                     </div>
                                 </h1>
-                                <div className="card col-10 p-3 ml-3 d-inline-block header-szoveg">
-                                    <p className="lead col-10 px-0 ">I am a Web developer with experience designing and building websites and web applications.</p>
+                                <div className="card col-md-10 p-md-3 p-1 ml-md-3 d-inline-block header-szoveg">
+                                    <p className="col-md-10 px-0 ">I am a Web developer with experience designing and building websites and web applications.</p>
                                 </div>
                             </div>
                             
-                            <div className="card float-right mt-4 d-inline-block w-25 py-2 px-5 lead">
+                            <div className="card header-linkek float-right mt-4 d-inline-block py-2 px-5 lead">
                                 <div className="d-flex flex-row justify-content-between">
                                     <span><a href="#"><FaEnvelope /></a></span>
                                     <span>
