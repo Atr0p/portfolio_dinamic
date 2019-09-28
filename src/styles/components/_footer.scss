@@ -1,3 +1,4 @@
+
 .footer-strip {
     background: color(secondary);
     padding-top: 20px;
@@ -15,9 +16,8 @@
     }
     .footer-title {
       color: #ffffff;
-      font-size: 1.3rem;
+      font-size: 1rem;
       margin-bottom: 10px;
-      flex: 0;
       @include desktop {
         margin: 0;
       }

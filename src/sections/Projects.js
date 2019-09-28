@@ -14,25 +14,26 @@ const Projects = props => {
           <div className="row">
             {melok.map(melo => (
               (melo.node.type == "work" ? (
-                <div key={melo.path} className="col-md-4">
+                <div key={melo.path} className="col-md-6 col-xl-4">
                   
-                  <a href={melo.node.path}>
-                    <div className="card shadow mx-1 p-4 meloCard my-2" 
-                        style={{background: melo.node.css, color: melo.node.text}}
-                    >
-                      <div className="prew">
-                        <h4 className="d-flex align-items-center justify-content-center">
-                          {(melo.node.image != '') ? (
-                            <span className="flex-fill meloImgCont">
-                              <img className="meloImg" src={melo.node.image} />
-                            </span>
-                          ) : null}
-                          {(melo.node.name != '') ? (<span className="meloCimCont">{melo.node.name}</span>) : null}
-                        </h4>
+                  <a target="_blank" href={melo.node.path}>
+                    <div className="card mx-1 meloCard my-2">
+                      <div className="prew px-4 py-5" style={{background: melo.node.css, color: melo.node.text}}>
+                          <h4 className="row align-items-center justify-content-center">
+                            {(melo.node.image != '') ? (
+                              <span className={(melo.node.name != '') ? "col-3" : "col-12"} >
+                                <img className="meloImg" src={melo.node.image} />
+                              </span>
+                            ) : null}
+                            {(melo.node.name != '') ? (
+                              <span className={(melo.node.image != '') ? "col-9" : "col-12"}>
+                                {melo.node.name}
+                              </span>
+                            ) : null}
+                          </h4>
                       </div>
-                      <div className="full container">
+                      <div className="full container py-2 px-1">
                         <span className="fullText">{melo.node.description}</span><br/>
-                        <span className="btn btn-outline-primary my-2">View <FaArrowRight /></span>
                       </div>
                     </div>
                   </a>

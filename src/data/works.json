@@ -13,7 +13,7 @@
     {
       "name": "Najdiprekladatele",
       "description": "Where the customer can find the best translator in Checz",
-      "css": "linear-gradient(to right, #0f2027, #203a43, #2c5364)",
+      "css": "linear-gradient(to right, #2c5364, #203a43, #0f2027)",
       "height": 100,
       "text": "white",
       "image": "/works/najdi.png",

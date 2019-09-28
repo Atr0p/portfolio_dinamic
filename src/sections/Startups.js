@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link, StaticQuery } from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
 
 import {FaArrowRight} from 'react-icons/fa';
 
@@ -15,7 +15,7 @@ const Startups = props => {
               (melo.node.type === "startup" ? (
               <div key={melo.name} className="col-md-6 my-2 my-md-0">
                 
-                  <div className="card mx-1 p-4 meloCard shadow" 
+                  <div className="card mx-1 p-4 startupCard" 
                       style={{border: '3px solid'+melo.node.css, color: melo.node.text}}
                   >
                     <div className="row align-items-center justify-content-center">

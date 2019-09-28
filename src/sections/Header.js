@@ -14,6 +14,7 @@ export default class Header extends Component {
                     config={{delay: 300 }}
                 >
                     {props => (
+                        <>
                         <div className="container" style={props}>
                             <div className="w-100">
                                 <h1 className="heading">
@@ -21,26 +22,35 @@ export default class Header extends Component {
                                         <span className="font-weight-bold">Hi, I'm Peter.</span>
                                     </div>
                                 </h1>
-                                <div className="card col-md-10 p-md-3 p-1 ml-md-3 d-inline-block header-szoveg">
+                                <div className="card col-md-9 pt-md-4 pb-1 px-md-3 px-2 ml-md-3 d-inline-block header-szoveg">
                                     <p className="col-md-10 px-0 ">I am a Web developer with experience designing and building websites and web applications.</p>
                                 </div>
                             </div>
                             
-                            <div className="card header-linkek float-right mt-4 d-inline-block py-2 px-5 lead">
+                            <div className="card header-linkek float-right mt-4 d-inline-block">
                                 <div className="d-flex flex-row justify-content-between">
-                                    <span><a href="#"><FaEnvelope /></a></span>
-                                    <span>
-                                        <a target="_blank" href="https://www.linkedin.com/in/kovacs-peter"><FaLinkedin /></a>
-                                    </span>
-                                    <span>
-                                        <a target="_blank" href="https://github.com/Atr0p"><FaGithubSquare /></a>
-                                    </span>
+                                    <div className="contact-border p-2">
+                                        <span>
+                                            <a target="_blank" href="https://www.linkedin.com/in/kovacs-peter"><FaLinkedin /></a>
+                                        </span>
+                                        <span>
+                                            <a target="_blank" href="https://github.com/Atr0p"><FaGithubSquare /></a>
+                                        </span>
+                                    </div>
+                                    <div className="p-2">
+                                        <Link to="/contact">Contact</Link>
+                                    </div>
                                 </div>
                                 
                             </div>
 
-                        
+                            
                         </div>
+                        <div className="see-more text-center w-100 mb-2">
+                                <span>See more</span> <br/>
+                                <span>></span>
+                            </div>
+                            </>
                         )}
                     </Spring>
                 
