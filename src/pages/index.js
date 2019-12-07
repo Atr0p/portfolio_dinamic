@@ -1,61 +1,75 @@
-import React from 'react';
-import { graphql, withPrefix, Link } from 'gatsby';
-import Helmet from 'react-helmet';
-import SEO from '../components/SEO';
-import Layout from '../layouts/index';
-import Header from '../sections/Header';
-import Projects from '../sections/Projects';
-import Startups from '../sections/Startups';
-import Contact from '../sections/Contact';
+import React from "react";
+import { graphql, withPrefix, Link } from "gatsby";
+import Helmet from "react-helmet";
+import SEO from "../components/SEO";
+import Layout from "../layouts/index";
+import Header from "../sections/Header";
+import Projects from "../sections/Projects";
+import Startups from "../sections/Startups";
+import Contact from "../sections/Contact";
 
-import { FaPencilRuler, FaCode, FaServer } from 'react-icons/fa';
+import { FaPencilRuler, FaCode, FaServer } from "react-icons/fa";
 
-const Home = (props) => {
+const Home = props => {
   return (
     <Layout bodyClass="page-home">
-
       <SEO title="Peter Kovach" />
       <Helmet>
-        <meta
-          name="description"
-          content="Personal webite of Peter Kovach"
-        />
+        <meta name="description" content="Personal webite of Peter Kovach" />
       </Helmet>
 
       <main role="main">
+        <Header />
 
-       <Header />
-
-        <section id="bemutatkozas" className="tav text-center pb-2">
+        <section id="bemutatkozas" className="tav text-center pb-5 pb-md-2">
           <div className="container">
             <h3 className="pt-5 pb-2">Nice to meet you!</h3>
-            <p className="lead">
-              Since beginning my journey as a freelance developer nearly 3 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually improving my chops.
+            <p className="lead pb-4 pb-md-0">
+              Since beginning my journey as a freelance developer nearly 3 years
+              ago, I've done remote work for agencies, consulted for startups,
+              and collaborated with talented people to create digital products
+              for both business and consumer use. I'm quietly confident,
+              naturally curious, and perpetually improving my chops.
             </p>
           </div>
         </section>
 
         <section id="skills" className="container tav text-center">
-            <div className="d-md-flex bd-highlight border rounded shadow">
-                <div className="p-2 flex-fill bd-highlight border-right">
-                    <FaPencilRuler className="categoryIcon"/>
-                    <h4><strong>Design</strong></h4>
-                    <p>...</p>
-
-                </div>
-                <div className="p-2 flex-fill bd-highlight border-right">
-                    <FaCode className="categoryIcon"/>
-                    <h4><strong>Front</strong></h4>
-                    <p>...</p>
-
-                </div>
-                <div className="p-2 flex-fill bd-highlight">
-                    <FaServer className="categoryIcon"/>
-                    <h4><strong>Back</strong></h4>
-                    <p>...</p>
-
-                </div>
+          <div className="d-md-flex bd-highlight border rounded shadow">
+            <div className="p-2 flex-fill bd-highlight">
+              <FaServer className="categoryIcon" />
+              <h4>
+                <strong>Back</strong>
+              </h4>
+              <ul className="list-unstyled">
+                <li>Laravel</li>
+                <li>NodeJS</li>
+              </ul>
             </div>
+
+            <div className="p-2 flex-fill bd-highlight border-right">
+              <FaCode className="categoryIcon" />
+              <h4>
+                <strong>Front</strong>
+              </h4>
+              <ul className="list-unstyled">
+                <li>ReactJS</li>
+                <li>GatsbyJS</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div className="p-2 flex-fill bd-highlight border-right">
+              <FaPencilRuler className="categoryIcon" />
+              <h4>
+                <strong>Design</strong>
+              </h4>
+              <ul className="list-unstyled">
+                <li>Adobe XD</li>
+                <li>Adobe AI</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         <Projects />
@@ -64,7 +78,10 @@ const Home = (props) => {
           <div className="container">
             <h3 className="pt-5">My projects</h3>
             <p className="lead">
-              I'm a bit of a digital product junky. Over the years, I've used hundreds of web and mobile apps in different industries and verticals. Eventually, I decided that it would be a fun challenge to try designing and building my own.
+              I'm a bit of a digital product junky. Over the years, I've used
+              hundreds of web and mobile apps in different industries and
+              verticals. Eventually, I decided that it would be a fun challenge
+              to try designing and building my own.
             </p>
           </div>
         </section>
@@ -72,9 +89,7 @@ const Home = (props) => {
         <Startups />
 
         <Contact />
-
-    </main>
-
+      </main>
     </Layout>
   );
 };
@@ -100,6 +115,5 @@ export const query = graphql`
     }
   }
 `;
-
 
 export default Home;

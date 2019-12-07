@@ -1,5 +1,5 @@
-import React from 'react';
-import { graphql, Link, StaticQuery } from 'gatsby';
+import React from "react";
+import { graphql, Link, StaticQuery } from "gatsby";
 
 const Footer = props => (
   <div className="footer-strip">
@@ -7,20 +7,10 @@ const Footer = props => (
       <div className="row">
         <div className="col-12">
           <div className="footer">
-            <span className="footer-title">{props.data.site.siteMetadata.title} ©
-{' '}
-{new Date().getFullYear()}</span>
-            <ul className="footer-menu">
-              <li>
-                {' '}
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                {' '}
-                <Link to="/contact">Contact</Link>
-              </li>
-
-            </ul>
+            <span className="footer-title">
+              {props.data.site.siteMetadata.title} © {new Date().getFullYear()}
+            </span>
+            <ul className="footer-menu"></ul>
           </div>
         </div>
       </div>

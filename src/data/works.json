@@ -1,92 +1,102 @@
 [
-    {
-      "name": "Cirkonuniversum",
-      "description": "Dental consumable products for dental practices ",
-      "css": "linear-gradient(to left, #11998e, #38ef7d)",
-      "height": 100,
-      "text": "white",
-      "image": "/works/cirkonuniversum.png",
-      "path": "https://cirkonuniversum.hu",
-      "type": "work",
-      "status": "done"
-    },
-    {
-      "name": "Najdiprekladatele",
-      "description": "Where the customer can find the best translator in Checz",
-      "css": "linear-gradient(to right, #2c5364, #203a43, #0f2027)",
-      "height": 100,
-      "text": "white",
-      "image": "/works/najdi.png",
-      "path": "https://najdiprekladatele.cz",
-      "type": "work",
-      "status": "done"
-    },
-    {
-      "name": "Mateklabor",
-      "description": "Math learning, preparation courses for exams",
-      "css": "linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115))",
-      "text": "white",
-      "height": 100,
-      "image": "/works/mateklabor.png",
-      "path": "https://mateklabor.hu",
-      "type": "work",
-      "status": "done"
-    },
-    {
-      "name": "Tatyó",
-      "description": "Back-to-School supplies",
-      "css": "linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4)",
-      "height": 100,
-      "text": "white",
-      "image": "/works/tatyo.png",
-      "path": "https://tanszercsomag.com",
-      "type": "work",
-      "status": "done"
-    },
-    {
-      "name": "",
-      "description": "Dental consumable machines",
-      "css": "linear-gradient(to right, #654ea3, #eaafc8)",
-      "height": 100,
-      "text": "white",
-      "image": "/works/grof.png",
-      "path": "https://grofdental.com",
-      "type": "work",
-      "status": "done"
-    },
-    {
-      "name": "Caut avocat",
-      "description": "Find a lawyer in Romania",
-      "css": "linear-gradient(to right, #000000, #434343)",
-      "height": 100,
-      "text": "white",
-      "image": "/works/caut.png",
-      "path": "https://cautavocat.ro",
-      "type": "work",
-      "status": "done"
-    },
+  {
+    "name": "Cirkonuniversum",
+    "description": "Dental consumable products for dental practices ",
+    "css": "linear-gradient(to left, #11998e, #38ef7d)",
+    "height": 100,
+    "text": "white",
+    "image": "/works/cirkonuniversum.png",
+    "path": "https://cirkonuniversum.hu",
+    "type": "work",
+    "status": "done"
+  },
+  {
+    "name": "Najdiprekladatele",
+    "description": "Where the customer can find the best translator in Checz",
+    "css": "linear-gradient(to right, #2c5364, #203a43, #0f2027)",
+    "height": 100,
+    "text": "white",
+    "image": "/works/najdi.png",
+    "path": "https://najdiprekladatele.cz",
+    "type": "work",
+    "status": "done"
+  },
+  {
+    "name": "Mateklabor",
+    "description": "Math learning, preparation courses for exams",
+    "css": "linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115))",
+    "text": "white",
+    "height": 100,
+    "image": "/works/mateklabor.png",
+    "path": "https://mateklabor.hu",
+    "type": "work",
+    "status": "done"
+  },
+  {
+    "name": "Tatyó",
+    "description": "Back-to-School supplies",
+    "css": "linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4)",
+    "height": 100,
+    "text": "white",
+    "image": "/works/tatyo.png",
+    "path": "https://tanszercsomag.com",
+    "type": "work",
+    "status": "done"
+  },
+  {
+    "name": "",
+    "description": "Dental consumable machines",
+    "css": "linear-gradient(to right, #654ea3, #eaafc8)",
+    "height": 100,
+    "text": "white",
+    "image": "/works/grof.png",
+    "path": "https://grofdental.com",
+    "type": "work",
+    "status": "done"
+  },
+  {
+    "name": "SzukajPrawnikow",
+    "description": "Find a lawyer in Romania",
+    "css": "linear-gradient(to right, #000000, #434343)",
+    "height": 100,
+    "text": "white",
+    "image": "/works/caut.png",
+    "path": "https://szukajprawnikow.pl",
+    "type": "work",
+    "status": "done"
+  },
 
-    {
-      "name": "Wattmanager",
-      "description": "Energy-related solutions for everyone",
-      "css": "blue",
-      "text": "black",
-      "height": 100,
-      "image": "/works/wattman.png",
-      "path": "https://wattmanager.netlify.com",
-      "type": "startup",
-      "status": "Under development"
-    },
-    {
-      "name": "Wendigo",
-      "description": "ARG game",
-      "css": "red",
-      "text": "black",
-      "height": 100,
-      "image": "",
-      "path": "",
-      "type": "startup",
-      "status": "Coming soon"
-    }
-  ]
-  
+  {
+    "name": "Wattmanager",
+    "description": "Energy-related solutions for everyone",
+    "css": "linear-gradient(to right, #304352, #d7d2cc)",
+    "text": "white",
+    "height": 100,
+    "image": "/works/wattman.png",
+    "path": "https://wattmanager.hu",
+    "type": "work",
+    "status": "done"
+  },
+  {
+    "name": "Wenerate",
+    "description": "Energy consumption monitoring and legal compliance made easy",
+    "css": "green",
+    "text": "black",
+    "height": 100,
+    "image": "",
+    "path": "https://wenerate.com",
+    "type": "startup",
+    "status": "Under development"
+  },
+  {
+    "name": "Wendigo",
+    "description": "ARG game",
+    "css": "red",
+    "text": "black",
+    "height": 100,
+    "image": "",
+    "path": "",
+    "type": "startup",
+    "status": "Coming soon"
+  }
+]
